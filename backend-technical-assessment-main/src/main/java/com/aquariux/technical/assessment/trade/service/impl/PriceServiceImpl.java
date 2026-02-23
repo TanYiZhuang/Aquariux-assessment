@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PriceServiceImpl implements PriceServiceInterface {
 
-    private final CryptoPriceMapper cryptoPriceMapper;
+    private CryptoPriceMapper cryptoPriceMapper;
 
     @Override
     public List<BestPriceResponse> getLatestBestPrices() {

@@ -18,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PriceController {
 
-    private final PriceServiceInterface priceService;
+    private PriceServiceInterface priceService;
 
     @GetMapping("/latest")
     @Operation(summary = "Get latest best prices", description = "Retrieve the latest aggregated best prices for all crypto pairs")

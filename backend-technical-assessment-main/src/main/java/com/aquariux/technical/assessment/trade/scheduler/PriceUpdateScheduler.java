@@ -18,9 +18,9 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class PriceUpdateScheduler {
 
-    private final RestTemplate restTemplate;
-    private final CryptoPairMapper cryptoPairMapper;
-    private final CryptoPriceMapper cryptoPriceMapper;
+    private RestTemplate restTemplate;
+    private CryptoPairMapper cryptoPairMapper;
+    private CryptoPriceMapper cryptoPriceMapper;
 
     private static final String BINANCE_URL = "https://api.binance.com/api/v3/ticker/bookTicker";
     private static final String HUOBI_URL = "https://api.huobi.pro/market/tickers";

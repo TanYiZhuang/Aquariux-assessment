@@ -19,7 +19,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class WalletController {
 
-    private final WalletServiceInterface walletService;
+    private WalletServiceInterface walletService;
 
     @GetMapping("/user/{userId}")
     @Operation(summary = "Get user wallet balances", description = "Retrieve all wallet balances for a specific user")

@@ -1,6 +1,8 @@
 package com.aquariux.technical.assessment.trade.mapper;
 
 import com.aquariux.technical.assessment.trade.dto.internal.UserWalletDto;
+import com.aquariux.technical.assessment.trade.entity.User;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -16,4 +18,5 @@ public interface UserWalletMapper {
             ORDER BY s.symbol
             """)
     List<UserWalletDto> findByUserId(Long userId);
+    
 }

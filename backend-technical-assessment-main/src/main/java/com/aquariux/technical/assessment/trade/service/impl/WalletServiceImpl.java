@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class WalletServiceImpl implements WalletServiceInterface {
 
-    private final UserWalletMapper userWalletMapper;
+    private  UserWalletMapper userWalletMapper;
 
     public List<WalletBalanceResponse> getUserWalletBalances(Long userId) {
         List<UserWalletDto> wallets = userWalletMapper.findByUserId(userId);
